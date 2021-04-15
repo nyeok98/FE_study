@@ -12,18 +12,23 @@
         h1 {
             background-color: #fff000;
         }
-    </style>
-    <script>
-        window.onload = function () {
-            var title = document.getElementById('main-title');
-            console.log(title)
+        .special { 
+            background: pink;
         }
-    </script>
+    </style>
+    
 </head>
 <body>
-    <h1 id="main-title">DOM (Document Object Model)</h1>
+
+    <h1 id="main-title">
+        DOM (Document Object Model)
+    </h1><br>
+    <h3 class="test">
+        <a href="https://www.google.com">test</a>
+    </h3>
     <article>
-        <header>header</header>
+        <header>
+        </header>
         <section>
             <header>s header</header>
             section 1
@@ -33,5 +38,12 @@
             section 2
         </section>
     </article>
+    <script>
+        var link = document.querySelector('.test a');
+        console.log(link.getAttribute('href'));
+
+        link.setAttribute('href', 'https://naver.com');
+        console.log(link.getAttribute('href'));
+    </script>
 </body>
 </html>
