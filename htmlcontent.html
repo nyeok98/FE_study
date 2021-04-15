@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice</title>
+    <style>
+        body {
+            font-size: 3rem;
+        }
+        h1 {
+            background-color: #fff000;
+        }
+        .apple {
+            display: inline-block;
+            list-style: none;
+        }
+        .apple img {
+            width: 100px;
+        }
+        .link-apple {
+            color: red;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <h1 id="main-title">
+        DOM (Document Object Model)
+    </h1>
+
+    <ul class="apple-mom">
+        <li class="apple">
+            <img src="images/apple.png">
+            <a class="link-apple" href="https://apple.co.kr">Apple</a>
+        </li>
+        <li class="apple"><img src="images/apple.png"></li>
+        <li class="apple"><img src="images/apple.png"></li>
+    </ul>
+    <h3 class="test">
+        <a class="link-google" href="https://www.google.com">test</a>
+    </h3>
+    
+    <script>
+        var appleMom = document.querySelector('.apple-mom');
+        var listElem = document.createElement('li');
+        listElem.innerHTML = '<span>사과사과</span>';
+        appleMom.appendChild(listElem);
+        
+    </script>
+</body>
+</html>
