@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice</title>
+    <style>
+        body {
+            font-size: 3rem;
+        }
+        h1 {
+            background-color: #fff000;
+        }
+        .apple {
+            display: inline-block;
+            list-style: none;
+        }
+        .apple img {
+            width: 100px;
+        }
+        .link-apple {
+            color: red;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <h1 id="main-title">
+        EVENT
+    </h1>
+
+    <ul class="apple-mom">
+        <li class="apple">
+            <img src="images/apple.png">
+            <a class="link-apple" href="https://apple.co.kr">Apple</a>
+        </li>
+        <li class="apple"><img src="images/apple.png"></li>
+        <li class="apple"><img src="images/apple.png"></li>
+    </ul>
+    
+    <button class="btn">클릭하세요!</button>
+    
+    <script>
+        var btn = document.querySelector('.btn');
+        var mainTitle = document.querySelector('#main-title');
+        
+        function btnClickHandler() {
+            mainTitle.style.background = 'dodgerblue';
+        }
+
+        btn.addEventListener('click', btnClickHandler);
+    </script>
+</body>
+</html>
