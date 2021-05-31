@@ -70,6 +70,12 @@ button {
   height: auto;
 }
 
+#prev,
+#next {
+  position: absolute;
+  transform: translateY(-50%);
+}
+
 #prev {
   top: 50%;
   left: 0px;
@@ -78,12 +84,6 @@ button {
 #next {
   top: 50%;
   right: 0px;
-}
-
-#prev,
-#next {
-  position: absolute;
-  transform: translateY(-50%);
 }
 
 .card-content {
